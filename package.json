@@ -1,6 +1,6 @@
 {
   "name": "server-sent-stream",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Web Streams-compatible TransformStream for server-sent events",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
