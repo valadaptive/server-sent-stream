@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node10",
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "module": "ES2022",
+        "target": "ESNext",
+        "noErrorTruncation": true,
+        "outDir": "dist",
+        "lib": ["ESNext", "dom"],
+        "declaration": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
