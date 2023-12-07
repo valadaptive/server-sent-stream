@@ -338,6 +338,189 @@ def",
 ]
 `;
 
+exports[`makeSSEStream comment cr 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
+def",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`makeSSEStream comment crlf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
+def",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`makeSSEStream comment lf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
+def",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`makeSSEStream event ID with null byte cr 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`makeSSEStream event ID with null byte crlf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`makeSSEStream event ID with null byte lf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
 exports[`makeSSEStream event IDs cr 1`] = `
 [
   MessageEvent {

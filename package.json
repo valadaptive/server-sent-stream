@@ -16,6 +16,7 @@
   "types": "dist/mjs/index.d.ts",
   "scripts": {
     "test": "jest test/*",
+    "coverage": "jest test/* --coverage",
     "update-snapshot": "jest test/* --updateSnapshot",
     "build": "node build.js",
     "prepublishOnly": "node build.js"

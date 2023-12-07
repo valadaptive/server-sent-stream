@@ -115,4 +115,13 @@ describe('makeSSEStream', () => {
         // eslint-disable-next-line max-len
         testAllLineEndings('data: foo\nid: bar\nid: baz\ndata: quux\n\ndata: sameid\n\nid: newid\n\ndata: replacedid\n\n');
     });
+
+    describe('event ID with null byte', () => {
+        // eslint-disable-next-line max-len
+        testAllLineEndings('data: foo\nid: bar\nid: inval\0id\n\ndata:again\n\nid: baz\ndata: quux\n\n');
+    });
+
+    describe('comment', () => {
+        testAllLineEndings('data: abc\ndata: def\n:this is a comment!\n\ndata:foo\n\n');
+    });
 });
