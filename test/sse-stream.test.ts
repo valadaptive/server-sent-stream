@@ -1,6 +1,6 @@
 import {describe, expect, test} from '@jest/globals';
 
-import makeSSEStream from '../src/index';
+import EventSourceStream from '../src/index';
 
 const makeTestStream = (inputText: string) => {
     const chunks = inputText.split('|');
@@ -41,7 +41,7 @@ const readTestStream = <T>(stream: ReadableStream<T>) => {
 
 const testEndToEnd = (inputText: string) => {
     const testStream = makeTestStream(inputText);
-    const sseStream = makeSSEStream();
+    const sseStream = new EventSourceStream();
     testStream.pipeThrough(sseStream);
     return readTestStream(sseStream.readable);
 };
