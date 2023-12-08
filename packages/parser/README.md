@@ -12,7 +12,7 @@ This is the underlying parsing machinery for [@server-sent-stream/web](https://w
   - `push(chunk: string)`
     - Push a chunk of data to the parser. This may cause the `onEvent` callback to be called, possibly multiple times.
   - `end()`
-    - Indicate that the stream has ended and no more data will be sent. This may also cause `onEvent` to be called, possibly multiple times. You should always call this once the data source ends, in order to properly flush the last event out if one exists.
+    - Indicate that the stream has ended and no more data will be sent.
 
 ## Warning
 

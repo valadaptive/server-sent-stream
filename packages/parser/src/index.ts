@@ -41,7 +41,7 @@ class EventStreamParser {
         if (events.length === 0) return;
 
         // The leftover text to remain in the buffer is whatever doesn't have two newlines after it. If the buffer ended
-        // with two newline, thiss will be an empty string.
+        // with two newlines, this will be an empty string.
         this.streamBuffer = events.pop()!;
 
         for (const eventChunk of events) {
