@@ -27,10 +27,6 @@ class EventSourceStream implements TransformStream<Uint8Array, MessageEvent<stri
 
             transform(chunk) {
                 parser.push(chunk);
-            },
-
-            flush() {
-                parser.end();
             }
         });
 

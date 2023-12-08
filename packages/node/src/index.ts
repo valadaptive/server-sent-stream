@@ -38,8 +38,8 @@ class EventSourceStream extends Transform {
 
     _flush(callback: (error: Error | null) => unknown): void {
         try {
-            this.decoder.end();
-            this.parser.end();
+            const remainingText = this.decoder.end();
+            this.parser.push(remainingText);
             callback(null);
         } catch (err) {
             callback(err as Error);
