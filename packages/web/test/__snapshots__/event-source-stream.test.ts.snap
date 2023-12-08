@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`makeSSEStream basic cr 1`] = `
+exports[`EventSourceStream basic cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -26,7 +26,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream basic crlf 1`] = `
+exports[`EventSourceStream basic crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -52,7 +52,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream basic lf 1`] = `
+exports[`EventSourceStream basic lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -78,7 +78,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at crlf 1`] = `
+exports[`EventSourceStream chunk split at crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -104,7 +104,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at end cr 1`] = `
+exports[`EventSourceStream chunk split at end cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -130,7 +130,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at end crlf 1`] = `
+exports[`EventSourceStream chunk split at end crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -156,7 +156,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at end lf 1`] = `
+exports[`EventSourceStream chunk split at end lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -182,7 +182,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at space cr 1`] = `
+exports[`EventSourceStream chunk split at space cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -208,7 +208,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at space crlf 1`] = `
+exports[`EventSourceStream chunk split at space crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -234,7 +234,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunk split at space lf 1`] = `
+exports[`EventSourceStream chunk split at space lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -260,7 +260,82 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunked cr 1`] = `
+exports[`EventSourceStream chunk split mid-code point 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 2`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 3`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 4`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 5`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream chunked cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -286,7 +361,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunked crlf 1`] = `
+exports[`EventSourceStream chunked crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -312,7 +387,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream chunked lf 1`] = `
+exports[`EventSourceStream chunked lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -338,7 +413,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream comment cr 1`] = `
+exports[`EventSourceStream comment cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -364,7 +439,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream comment crlf 1`] = `
+exports[`EventSourceStream comment crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -390,7 +465,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream comment lf 1`] = `
+exports[`EventSourceStream comment lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -416,7 +491,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream event ID with null byte cr 1`] = `
+exports[`EventSourceStream event ID with null byte cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -451,7 +526,7 @@ exports[`makeSSEStream event ID with null byte cr 1`] = `
 ]
 `;
 
-exports[`makeSSEStream event ID with null byte crlf 1`] = `
+exports[`EventSourceStream event ID with null byte crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -486,7 +561,7 @@ exports[`makeSSEStream event ID with null byte crlf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream event ID with null byte lf 1`] = `
+exports[`EventSourceStream event ID with null byte lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -521,7 +596,7 @@ exports[`makeSSEStream event ID with null byte lf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream event IDs cr 1`] = `
+exports[`EventSourceStream event IDs cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -557,7 +632,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream event IDs crlf 1`] = `
+exports[`EventSourceStream event IDs crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -593,7 +668,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream event IDs lf 1`] = `
+exports[`EventSourceStream event IDs lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -629,7 +704,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream event types cr 1`] = `
+exports[`EventSourceStream event types cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "baz",
@@ -655,7 +730,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream event types crlf 1`] = `
+exports[`EventSourceStream event types crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "baz",
@@ -681,7 +756,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream event types lf 1`] = `
+exports[`EventSourceStream event types lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "baz",
@@ -707,7 +782,7 @@ quux",
 ]
 `;
 
-exports[`makeSSEStream field with no colon cr 1`] = `
+exports[`EventSourceStream field with no colon cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -726,7 +801,7 @@ foo
 ]
 `;
 
-exports[`makeSSEStream field with no colon crlf 1`] = `
+exports[`EventSourceStream field with no colon crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -745,7 +820,7 @@ foo
 ]
 `;
 
-exports[`makeSSEStream field with no colon lf 1`] = `
+exports[`EventSourceStream field with no colon lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -764,13 +839,13 @@ foo
 ]
 `;
 
-exports[`makeSSEStream invalid stream cr 1`] = `[]`;
+exports[`EventSourceStream invalid stream cr 1`] = `[]`;
 
-exports[`makeSSEStream invalid stream crlf 1`] = `[]`;
+exports[`EventSourceStream invalid stream crlf 1`] = `[]`;
 
-exports[`makeSSEStream invalid stream lf 1`] = `[]`;
+exports[`EventSourceStream invalid stream lf 1`] = `[]`;
 
-exports[`makeSSEStream only one leading space stripped cr 1`] = `
+exports[`EventSourceStream only one leading space stripped cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -785,7 +860,7 @@ exports[`makeSSEStream only one leading space stripped cr 1`] = `
 ]
 `;
 
-exports[`makeSSEStream only one leading space stripped crlf 1`] = `
+exports[`EventSourceStream only one leading space stripped crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -800,7 +875,7 @@ exports[`makeSSEStream only one leading space stripped crlf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream only one leading space stripped lf 1`] = `
+exports[`EventSourceStream only one leading space stripped lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -815,7 +890,7 @@ exports[`makeSSEStream only one leading space stripped lf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream only one trailing newline stripped cr 1`] = `
+exports[`EventSourceStream only one trailing newline stripped cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -832,7 +907,7 @@ exports[`makeSSEStream only one trailing newline stripped cr 1`] = `
 ]
 `;
 
-exports[`makeSSEStream only one trailing newline stripped crlf 1`] = `
+exports[`EventSourceStream only one trailing newline stripped crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -849,7 +924,7 @@ exports[`makeSSEStream only one trailing newline stripped crlf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream only one trailing newline stripped lf 1`] = `
+exports[`EventSourceStream only one trailing newline stripped lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -866,7 +941,23 @@ exports[`makeSSEStream only one trailing newline stripped lf 1`] = `
 ]
 `;
 
-exports[`makeSSEStream very chunked cr 1`] = `
+exports[`EventSourceStream utf-8 BOM is ignored 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
+bar",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream very chunked cr 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -892,7 +983,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream very chunked crlf 1`] = `
+exports[`EventSourceStream very chunked crlf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",
@@ -918,7 +1009,7 @@ def",
 ]
 `;
 
-exports[`makeSSEStream very chunked lf 1`] = `
+exports[`EventSourceStream very chunked lf 1`] = `
 [
   MessageEvent {
     Symbol(type): "message",

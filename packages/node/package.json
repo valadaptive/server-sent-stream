@@ -1,0 +1,40 @@
+{
+  "name": "@server-sent-stream/node",
+  "version": "1.0.2",
+  "description": "Node.js transform stream for parsing server-sent events",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../build.js",
+    "prepublishOnly": "node ../../build.js"
+  },
+  "author": "valadaptive",
+  "license": "ISC OR MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valadaptive/server-sent-stream.git"
+  },
+  "keywords": [
+    "stream",
+    "server-sent-events",
+    "eventsource"
+  ],
+  "bugs": {
+    "url": "https://github.com/valadaptive/server-sent-stream/issues"
+  },
+  "homepage": "https://github.com/valadaptive/server-sent-stream#readme",
+  "dependencies": {
+    "@server-sent-stream/parser": "^1.0.0"
+  }
+}

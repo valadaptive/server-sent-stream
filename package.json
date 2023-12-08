@@ -1,50 +1,25 @@
 {
-  "name": "server-sent-stream",
-  "version": "1.0.0",
-  "description": "Web Streams-compatible TransformStream for server-sent events",
-  "main": "dist/cjs/index.js",
-  "module": "dist/mjs/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/mjs/index.js",
-      "require": "./dist/cjs/index.js"
+    "workspaces": [
+        "packages/parser",
+        "packages/web"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.23.5",
+        "@babel/preset-env": "^7.23.5",
+        "@babel/preset-typescript": "^7.23.3",
+        "@typescript-eslint/eslint-plugin": "^6.13.2",
+        "@typescript-eslint/parser": "^6.13.2",
+        "eslint": "^8.55.0",
+        "jest": "^29.7.0",
+        "typescript": "^5.3.3"
+    },
+    "scripts": {
+        "test": "jest test/*",
+        "coverage": "jest test/* --coverage",
+        "update-snapshot": "jest test/* --updateSnapshot",
+        "lint": "eslint \"./packages\" \"./fixtures\" --ext .js,.ts"
+    },
+    "dependencies": {
+        "@server-sent-stream/parser": "^1.0.0"
     }
-  },
-  "files": [
-    "dist"
-  ],
-  "types": "dist/mjs/index.d.ts",
-  "scripts": {
-    "test": "jest test/*",
-    "coverage": "jest test/* --coverage",
-    "update-snapshot": "jest test/* --updateSnapshot",
-    "build": "node build.js",
-    "prepublishOnly": "node build.js"
-  },
-  "author": "valadaptive",
-  "license": "ISC OR MIT OR Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/valadaptive/server-sent-stream.git"
-  },
-  "keywords": [
-    "stream",
-    "server-sent-events",
-    "web-streams",
-    "eventsource"
-  ],
-  "bugs": {
-    "url": "https://github.com/valadaptive/server-sent-stream/issues"
-  },
-  "homepage": "https://github.com/valadaptive/server-sent-stream#readme",
-  "devDependencies": {
-    "@babel/core": "^7.23.5",
-    "@babel/preset-env": "^7.23.5",
-    "@babel/preset-typescript": "^7.23.3",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
-    "eslint": "^8.55.0",
-    "jest": "^29.7.0",
-    "typescript": "^5.3.3"
-  }
 }

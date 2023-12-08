@@ -1,0 +1,651 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventSourceStream basic cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream basic crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream basic lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at end cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at end crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at end lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at space cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at space crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split at space lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 1`] = `
+[
+  {
+    "data": "𐍈",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 2`] = `
+[
+  {
+    "data": "𐍈",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 3`] = `
+[
+  {
+    "data": "𐍈",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 4`] = `
+[
+  {
+    "data": "𐍈",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunk split mid-code point 5`] = `
+[
+  {
+    "data": "𐍈",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunked cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunked crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream chunked lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream comment cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream comment crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream comment lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream event ID with null byte cr 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "again",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+]
+`;
+
+exports[`EventSourceStream event ID with null byte crlf 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "again",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+]
+`;
+
+exports[`EventSourceStream event ID with null byte lf 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "again",
+    "eventType": "message",
+    "lastEventId": "bar",
+  },
+  {
+    "data": "quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+]
+`;
+
+exports[`EventSourceStream event IDs cr 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "sameid",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "replacedid",
+    "eventType": "message",
+    "lastEventId": "newid",
+  },
+]
+`;
+
+exports[`EventSourceStream event IDs crlf 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "sameid",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "replacedid",
+    "eventType": "message",
+    "lastEventId": "newid",
+  },
+]
+`;
+
+exports[`EventSourceStream event IDs lf 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "sameid",
+    "eventType": "message",
+    "lastEventId": "baz",
+  },
+  {
+    "data": "replacedid",
+    "eventType": "message",
+    "lastEventId": "newid",
+  },
+]
+`;
+
+exports[`EventSourceStream event types cr 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "baz",
+    "lastEventId": "",
+  },
+  {
+    "data": "noeventtype",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream event types crlf 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "baz",
+    "lastEventId": "",
+  },
+  {
+    "data": "noeventtype",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream event types lf 1`] = `
+[
+  {
+    "data": "foo
+quux",
+    "eventType": "baz",
+    "lastEventId": "",
+  },
+  {
+    "data": "noeventtype",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream field with no colon cr 1`] = `
+[
+  {
+    "data": "abc
+
+
+foo
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream field with no colon crlf 1`] = `
+[
+  {
+    "data": "abc
+
+
+foo
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream field with no colon lf 1`] = `
+[
+  {
+    "data": "abc
+
+
+foo
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream invalid stream cr 1`] = `[]`;
+
+exports[`EventSourceStream invalid stream crlf 1`] = `[]`;
+
+exports[`EventSourceStream invalid stream lf 1`] = `[]`;
+
+exports[`EventSourceStream only one leading space stripped cr 1`] = `
+[
+  {
+    "data": " abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream only one leading space stripped crlf 1`] = `
+[
+  {
+    "data": " abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream only one leading space stripped lf 1`] = `
+[
+  {
+    "data": " abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream only one trailing newline stripped cr 1`] = `
+[
+  {
+    "data": " abc
+
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream only one trailing newline stripped crlf 1`] = `
+[
+  {
+    "data": " abc
+
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream only one trailing newline stripped lf 1`] = `
+[
+  {
+    "data": " abc
+
+",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream utf-8 BOM is ignored 1`] = `
+[
+  {
+    "data": "foo
+bar",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream very chunked cr 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream very chunked crlf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventSourceStream very chunked lf 1`] = `
+[
+  {
+    "data": "abc
+def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;

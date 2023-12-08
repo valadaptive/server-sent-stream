@@ -11,10 +11,6 @@
         "target": "ESNext",
         "noErrorTruncation": true,
         "outDir": "dist",
-        "lib": ["ESNext", "dom"],
-        "declaration": true
-    },
-    "include": [
-        "src/**/*"
-    ]
+        "lib": ["ESNext", "dom"]
+    }
 }

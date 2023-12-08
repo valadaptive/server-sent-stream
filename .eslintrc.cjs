@@ -17,6 +17,10 @@ module.exports = {
         es6: true,
         browser: true
     },
+    ignorePatterns: [
+        "**/dist/**/*.js",
+        "**/dist/**/*.ts"
+    ],
     rules: {
         '@typescript-eslint/no-unused-vars': ['error', {'args': 'after-used', 'varsIgnorePattern': '__.*$'}],
         'no-constant-condition': ['error', {'checkLoops': false}],
