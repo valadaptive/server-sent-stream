@@ -20,22 +20,30 @@ class EventSourceStream extends Transform {
         this.isFirstChunk = true;
     }
 
-    _transform(chunk: Buffer | Uint8Array, encoding: string, callback: () => unknown) {
-        // The StringDecoder actually accepts buffers *and* typed arrays, but TypeScript doesn't know that
-        let decoded = this.decoder.write(chunk as Buffer);
-        // Strip the Unicode byte-order mark
-        if (this.isFirstChunk && decoded[0] === '\ufeff') {
-            decoded = decoded.slice(1);
+    _transform(chunk: Buffer | Uint8Array, encoding: string, callback: (error: Error | null) => unknown) {
+        try {
+            // The StringDecoder actually accepts buffers *and* typed arrays, but TypeScript doesn't know that
+            let decoded = this.decoder.write(chunk as Buffer);
+            // Strip the Unicode byte-order mark
+            if (this.isFirstChunk && decoded[0] === '\ufeff') {
+                decoded = decoded.slice(1);
+            }
+            this.parser.push(decoded);
+            this.isFirstChunk = false;
+            callback(null);
+        } catch (err) {
+            callback(err as Error);
         }
-        this.parser.push(decoded);
-        callback();
-        this.isFirstChunk = false;
     }
 
-    _flush(callback: (error?: Error | null | undefined) => void): void {
-        this.decoder.end();
-        this.parser.end();
-        callback();
+    _flush(callback: (error: Error | null) => unknown): void {
+        try {
+            this.decoder.end();
+            this.parser.end();
+            callback(null);
+        } catch (err) {
+            callback(err as Error);
+        }
     }
 }
 
