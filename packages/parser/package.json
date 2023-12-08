@@ -1,6 +1,6 @@
 {
   "name": "@server-sent-stream/parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parser for server-sent events",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
