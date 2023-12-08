@@ -2,519 +2,839 @@
 
 exports[`EventSourceStream basic cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream basic crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream basic lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at end cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at end crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at end lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at space cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at space crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split at space lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split mid-code point 1`] = `
 [
-  {
-    "data": "𐍈",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split mid-code point 2`] = `
 [
-  {
-    "data": "𐍈",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split mid-code point 3`] = `
 [
-  {
-    "data": "𐍈",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split mid-code point 4`] = `
 [
-  {
-    "data": "𐍈",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunk split mid-code point 5`] = `
 [
-  {
-    "data": "𐍈",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "𐍈",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunked cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunked crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream chunked lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream comment cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream comment crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream comment lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event ID with null byte cr 1`] = `
 [
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "again",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event ID with null byte crlf 1`] = `
 [
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "again",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event ID with null byte lf 1`] = `
 [
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "again",
-    "eventType": "message",
-    "lastEventId": "bar",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "again",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "bar",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "quux",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event IDs cr 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "sameid",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "sameid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "replacedid",
-    "eventType": "message",
-    "lastEventId": "newid",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "replacedid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "newid",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event IDs crlf 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "sameid",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "sameid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "replacedid",
-    "eventType": "message",
-    "lastEventId": "newid",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "replacedid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "newid",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event IDs lf 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "message",
-    "lastEventId": "baz",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "sameid",
-    "eventType": "message",
-    "lastEventId": "baz",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "sameid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "baz",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "replacedid",
-    "eventType": "message",
-    "lastEventId": "newid",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "replacedid",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "newid",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event types cr 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "baz",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "baz",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "noeventtype",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "noeventtype",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event types crlf 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "baz",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "baz",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "noeventtype",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "noeventtype",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream event types lf 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "baz",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 quux",
-    "eventType": "baz",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "noeventtype",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "noeventtype",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream field with no colon cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 
 
 foo
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream field with no colon crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 
 
 foo
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream field with no colon lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 
 
 foo
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
@@ -527,125 +847,190 @@ exports[`EventSourceStream invalid stream lf 1`] = `[]`;
 
 exports[`EventSourceStream only one leading space stripped cr 1`] = `
 [
-  {
-    "data": " abc",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream only one leading space stripped crlf 1`] = `
 [
-  {
-    "data": " abc",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream only one leading space stripped lf 1`] = `
 [
-  {
-    "data": " abc",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream only one trailing newline stripped cr 1`] = `
 [
-  {
-    "data": " abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc
 
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream only one trailing newline stripped crlf 1`] = `
 [
-  {
-    "data": " abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc
 
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream only one trailing newline stripped lf 1`] = `
 [
-  {
-    "data": " abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): " abc
 
 ",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream utf-8 BOM is ignored 1`] = `
 [
-  {
-    "data": "foo
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo
 bar",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream very chunked cr 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream very chunked crlf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
 
 exports[`EventSourceStream very chunked lf 1`] = `
 [
-  {
-    "data": "abc
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "abc
 def",
-    "eventType": "message",
-    "lastEventId": "",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
-  {
-    "data": "foo",
-    "eventType": "message",
-    "lastEventId": "",
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
   },
 ]
 `;
