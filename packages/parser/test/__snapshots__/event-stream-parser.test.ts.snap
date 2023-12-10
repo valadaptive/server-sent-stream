@@ -256,6 +256,36 @@ def",
 ]
 `;
 
+exports[`EventStreamParser empty event type is treated as 'message' cr 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser empty event type is treated as 'message' crlf 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser empty event type is treated as 'message' lf 1`] = `
+[
+  {
+    "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
 exports[`EventStreamParser event ID with null byte cr 1`] = `
 [
   {

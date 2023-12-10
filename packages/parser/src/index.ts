@@ -45,7 +45,7 @@ class EventStreamParser {
         this.streamBuffer = events.pop()!;
 
         for (const eventChunk of events) {
-            let eventType = 'message';
+            let eventType = '';
             // Split up by single newlines.
             const lines = eventChunk.split(/\n|\r|\r\n/g);
             let eventData = '';
@@ -82,7 +82,7 @@ class EventStreamParser {
             }
 
             // Trim the *last* trailing newline only.
-            this.onEvent(eventData, eventType, this.lastEventId);
+            this.onEvent(eventData, eventType || 'message', this.lastEventId);
         }
     }
 

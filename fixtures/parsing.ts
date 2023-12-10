@@ -88,6 +88,10 @@ const testParser = <T>(processText: (input: string[]) => Promise<T>) => {
     describe('comment', () => {
         testAllLineEndings('data: abc\ndata: def\n:this is a comment!\n\ndata:foo\n\n', processText);
     });
+
+    describe('empty event type is treated as \'message\'', () => {
+        testAllLineEndings('data: foo\nevent: some_custom_event\nevent:\n\n', processText);
+    });
 };
 
 export default testParser;

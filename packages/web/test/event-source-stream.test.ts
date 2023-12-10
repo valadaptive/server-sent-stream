@@ -27,7 +27,6 @@ const readTestStream = <T>(stream: ReadableStream<T>) => {
     return new Promise<T[]>(resolve => {
         const push = () => {
             void reader.read().then(({done, value}) => {
-
                 if (done) {
                     resolve(values);
                 } else {

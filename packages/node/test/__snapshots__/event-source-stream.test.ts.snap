@@ -491,6 +491,51 @@ def",
 ]
 `;
 
+exports[`EventSourceStream empty event type is treated as 'message' cr 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream empty event type is treated as 'message' crlf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
+exports[`EventSourceStream empty event type is treated as 'message' lf 1`] = `
+[
+  MessageEvent {
+    Symbol(type): "message",
+    Symbol(kTarget): null,
+    Symbol(kIsBeingDispatched): false,
+    Symbol(kData): "foo",
+    Symbol(kOrigin): "",
+    Symbol(kLastEventId): "",
+    Symbol(kSource): null,
+    Symbol(kPorts): [],
+  },
+]
+`;
+
 exports[`EventSourceStream event ID with null byte cr 1`] = `
 [
   MessageEvent {
