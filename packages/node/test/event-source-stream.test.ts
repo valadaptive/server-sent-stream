@@ -4,7 +4,7 @@ import {Readable} from 'node:stream';
 import testParsing from '../../../fixtures/parsing';
 import testStream from '../../../fixtures/stream';
 
-import EventSourceStream, {type ServerSentEvent} from '../src/index';
+import EventSourceStream from '../src/index';
 
 const makeTestStream = (chunks: Uint8Array[]) => {
     let i = 0;
@@ -21,7 +21,7 @@ const makeTestStream = (chunks: Uint8Array[]) => {
 };
 
 const readTestStream = (stream: Readable) => {
-    const values: ServerSentEvent[] = [];
+    const values: MessageEvent[] = [];
 
     return new Promise((resolve, reject) => {
         stream.on('data', chunk => {
