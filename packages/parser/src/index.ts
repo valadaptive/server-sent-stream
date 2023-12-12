@@ -9,15 +9,15 @@
  */
 class EventStreamParser {
     /** The part of the stream not yet processed because we're waiting for more data to come in. */
-    private streamBuffer;
+    declare private streamBuffer;
 
     /** The last seen event ID. */
-    private lastEventId;
+    declare private lastEventId;
 
     /**
      * A callback which will be called for each new event parsed.
      */
-    public onEvent;
+    declare public onEvent;
 
     /**
      * Construct a new parser for a single stream.

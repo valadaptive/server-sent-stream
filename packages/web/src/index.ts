@@ -6,9 +6,9 @@ import EventStreamParser from '@server-sent-stream/parser';
  */
 class EventSourceStream implements TransformStream<Uint8Array, MessageEvent<string>> {
     /** Stream of MessageEvents to consume. */
-    readable: ReadableStream<MessageEvent<string>>;
+    declare readable: ReadableStream<MessageEvent<string>>;
     /** Stream from the input buffer. */
-    writable: WritableStream<Uint8Array>;
+    declare writable: WritableStream<Uint8Array>;
 
     constructor() {
         // Two important things to note here:

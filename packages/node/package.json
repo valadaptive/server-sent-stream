@@ -1,6 +1,6 @@
 {
   "name": "@server-sent-stream/node",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Node.js transform stream for parsing server-sent events",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",

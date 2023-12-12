@@ -7,9 +7,9 @@ import {StringDecoder} from 'string_decoder';
  * {@link MessageEvent}s.
  */
 class EventSourceStream extends Transform {
-    private parser: EventStreamParser;
-    private decoder: StringDecoder;
-    private isFirstChunk: boolean;
+    declare private parser: EventStreamParser;
+    declare private decoder: StringDecoder;
+    declare private isFirstChunk: boolean;
     constructor() {
         // The readable end is a stream of ServerSentEvents
         super({readableObjectMode: true});
