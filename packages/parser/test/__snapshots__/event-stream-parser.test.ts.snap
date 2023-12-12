@@ -616,6 +616,51 @@ exports[`EventStreamParser only one trailing newline stripped lf 1`] = `
 ]
 `;
 
+exports[`EventStreamParser triple newline cr 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser triple newline crlf 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser triple newline lf 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
 exports[`EventStreamParser very chunked cr 1`] = `
 [
   {

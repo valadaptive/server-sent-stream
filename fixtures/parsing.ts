@@ -62,6 +62,10 @@ const testParser = <T>(processText: (input: string[]) => Promise<T>) => {
         expect(result).toMatchSnapshot();
     });
 
+    describe('triple newline', () => {
+        testAllLineEndings('data: abc\n\n\ndata: def\n\n', processText);
+    });
+
     describe('chunk split at end', () => {
         testAllLineEndings('data: abc\ndata: def|\n\ndata:foo\n|\n|', processText);
     });
