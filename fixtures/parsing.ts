@@ -47,6 +47,21 @@ const testParser = <T>(processText: (input: string[]) => Promise<T>) => {
         expect(result).toMatchSnapshot();
     });
 
+    test('cr followed by crlf', async() => {
+        const result = await processText('data: abc\r\r\ndata: def\r\r'.split('|'));
+        expect(result).toMatchSnapshot();
+    });
+
+    test('chunk split at cr followed by crlf 1', async() => {
+        const result = await processText('data: abc\r\r|\ndata: def\r\r'.split('|'));
+        expect(result).toMatchSnapshot();
+    });
+
+    test('chunk split at cr followed by crlf 2', async() => {
+        const result = await processText('data: abc\r|\r\ndata: def\r\r'.split('|'));
+        expect(result).toMatchSnapshot();
+    });
+
     describe('chunk split at end', () => {
         testAllLineEndings('data: abc\ndata: def|\n\ndata:foo\n|\n|', processText);
     });

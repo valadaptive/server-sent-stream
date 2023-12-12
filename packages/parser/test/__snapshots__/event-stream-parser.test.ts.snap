@@ -48,6 +48,36 @@ def",
 ]
 `;
 
+exports[`EventStreamParser chunk split at cr followed by crlf 1 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser chunk split at cr followed by crlf 2 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
 exports[`EventStreamParser chunk split at crlf 1`] = `
 [
   {
@@ -250,6 +280,21 @@ def",
   },
   {
     "data": "foo",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+]
+`;
+
+exports[`EventStreamParser cr followed by crlf 1`] = `
+[
+  {
+    "data": "abc",
+    "eventType": "message",
+    "lastEventId": "",
+  },
+  {
+    "data": "def",
     "eventType": "message",
     "lastEventId": "",
   },
