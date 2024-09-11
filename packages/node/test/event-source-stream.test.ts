@@ -25,7 +25,8 @@ const readTestStream = (stream: Readable) => {
 
     return new Promise((resolve, reject) => {
         stream.on('data', chunk => {
-            values.push(chunk);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            values.push(chunk as MessageEvent<any>);
         });
         stream.once('end', () => resolve(values));
         stream.once('error', reject);

@@ -95,12 +95,11 @@ const testParser = <T>(processText: (input: string[]) => Promise<T>) => {
     });
 
     describe('event IDs', () => {
-        // eslint-disable-next-line max-len
+        // eslint-disable-next-line @stylistic/max-len
         testAllLineEndings('data: foo\nid: bar\nid: baz\ndata: quux\n\ndata: sameid\n\nid: newid\n\ndata: replacedid\n\n', processText);
     });
 
     describe('event ID with null byte', () => {
-        // eslint-disable-next-line max-len
         testAllLineEndings('data: foo\nid: bar\nid: inval\0id\n\ndata:again\n\nid: baz\ndata: quux\n\n', processText);
     });
 

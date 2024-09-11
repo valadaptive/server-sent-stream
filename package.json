@@ -7,17 +7,20 @@
         "@babel/core": "^7.23.5",
         "@babel/preset-env": "^7.23.5",
         "@babel/preset-typescript": "^7.23.3",
-        "@typescript-eslint/eslint-plugin": "^6.13.2",
-        "@typescript-eslint/parser": "^6.13.2",
-        "eslint": "^8.55.0",
+        "@eslint/eslintrc": "^3.1.0",
+        "@eslint/js": "^9.10.0",
+        "@stylistic/eslint-plugin": "^2.8.0",
+        "eslint": "^9.10.0",
+        "globals": "^15.9.0",
         "jest": "^29.7.0",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "typescript-eslint": "^8.5.0"
     },
     "scripts": {
         "test": "jest test/*",
         "coverage": "jest test/* --coverage",
         "update-snapshot": "jest test/* --updateSnapshot",
-        "lint": "eslint \"./packages\" \"./fixtures\" --ext .js,.ts"
+        "lint": "eslint"
     },
     "dependencies": {
         "@server-sent-stream/parser": "^1.0.0"
