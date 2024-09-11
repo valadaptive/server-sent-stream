@@ -39,7 +39,32 @@ while (true) {
 }
 ```
 
-You need to use a decoding method that buffers partial Unicode data, like the `TextDecoderStream` API:
+You need to use a decoding method that buffers partial Unicode data, for instance by initializing one `TextDecoder` and using the `{stream: true}` option:
+```js
+// Fetch some URL that returns an event stream
+const response = await fetch('https://example.com/events', {body: '...'});
+
+// Initialize one TextDecoder for the whole stream, which can buffer any
+// incomplete code points
+const decoder = new TextDecoder();
+
+// Read from the response
+const reader = response.body.getReader();
+
+while (true) {
+    // `value` is a Uint8Array containing some portion of the response body.
+    const {done, value} = await reader.read();
+    if (done) break;
+
+    // By passing {stream: true} to TextDecoder#decode, we ensure that if the
+    // chunk of data ends in the middle of a code point, `decoder` will buffer
+    // it and wait for the rest of the code point to arrive in subsequent
+    // chunks.
+    const textChunk = decoder.decode(value, {stream: true});
+}
+```
+
+You can also use a `TextDecoderStream`:
 ```js
 // Fetch some URL that returns an event stream
 const response = await fetch('https://example.com/events', {body: '...'});
@@ -47,8 +72,8 @@ const response = await fetch('https://example.com/events', {body: '...'});
 // The TextDecoderStream has an internal buffer. If a chunk of bytes ends in the
 // middle of a multi-byte character, it will buffer it until the rest of the
 // character arrives in the next chunk.
-const decoder = new TextDecoderStream();
-response.body.pipeThrough(decoder);
+const decoderStream = new TextDecoderStream();
+response.body.pipeThrough(decoderStream);
 
 // Read from the response
 const reader = response.body.getReader();
