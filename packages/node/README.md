@@ -10,7 +10,7 @@ import EventSourceStream from '@server-sent-stream/node';
 ```
 
 ```js
-const EventSourceStream = require('@server-sent-stream/node');
+const EventSourceStream = require('@server-sent-stream/node').default;
 ```
 
 The `EventSourceStream` is a Node [stream.Transform](https://nodejs.org/api/stream.html#class-streamtransform). It consumes a stream of binary data (e.g. `Buffer`s or `Uint8Array`s), and produces a stream of `MessageEvent`s.
