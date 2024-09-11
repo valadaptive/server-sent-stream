@@ -33,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/valadaptive/server-sent-stream/issues"
   },
-  "homepage": "https://github.com/valadaptive/server-sent-stream#readme"
+  "homepage": "https://github.com/valadaptive/server-sent-stream#readme",
+  "type": "module"
 }

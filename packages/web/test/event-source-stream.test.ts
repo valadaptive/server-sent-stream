@@ -1,9 +1,9 @@
-import {describe} from '@jest/globals';
+import t from 'tap';
 
-import testParsing from '../../../fixtures/parsing';
-import testStream from '../../../fixtures/stream';
+import testParsing from '../../../fixtures/parsing.js';
+import testStream from '../../../fixtures/stream.js';
 
-import EventSourceStream from '../src/index';
+import EventSourceStream from '../src/index.js';
 
 const makeTestStream = (chunks: Uint8Array[]) => {
     let i = 0;
@@ -47,10 +47,12 @@ const testEndToEnd = (chunks: Uint8Array[]) => {
     return readTestStream(sseStream.readable);
 };
 
-describe('EventSourceStream', () => {
-    testParsing(chunks =>
+void t.test('EventSourceStream', t => {
+    testParsing(t, chunks =>
         testEndToEnd(chunks.map(chunk => new TextEncoder().encode(chunk)))
     );
 
-    testStream(testEndToEnd);
+    testStream(t, testEndToEnd);
+
+    t.end();
 });

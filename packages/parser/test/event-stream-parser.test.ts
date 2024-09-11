@@ -1,7 +1,7 @@
-import {describe} from '@jest/globals';
+import t from 'tap';
 
-import EventStreamParser from '../src/index';
-import testParser from '../../../fixtures/parsing';
+import EventStreamParser from '../src/index.js';
+import testParser from '../../../fixtures/parsing.js';
 
 const testEndToEnd = (chunks: string[]) => {
     const events: {data: string, eventType: string, lastEventId: string}[] = [];
@@ -15,6 +15,7 @@ const testEndToEnd = (chunks: string[]) => {
     return Promise.resolve(events);
 };
 
-describe('EventStreamParser', () => {
-    testParser(testEndToEnd);
+void t.test('EventStreamParser', t => {
+    testParser(t, testEndToEnd);
+    t.end();
 });

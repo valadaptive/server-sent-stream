@@ -7,8 +7,8 @@ import globals from 'globals';
 export default tseslint.config(
     {
         ignores: [
-            '**/dist/**/*.js',
-            '**/dist/**/*.ts'
+            '**/dist/**/*.{cjs,mjs,js,ts}',
+            'tap-snapshots/**/*.{cjs,mjs,js}'
         ]
     },
     eslint.configs.recommended,

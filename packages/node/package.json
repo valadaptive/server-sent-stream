@@ -36,5 +36,6 @@
   "homepage": "https://github.com/valadaptive/server-sent-stream#readme",
   "dependencies": {
     "@server-sent-stream/parser": "^1.0.0"
-  }
+  },
+  "type": "module"
 }

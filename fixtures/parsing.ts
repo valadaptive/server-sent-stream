@@ -1,114 +1,138 @@
-import {describe, expect, test} from '@jest/globals';
+import type {Test} from 'tap';
 
-const testAllLineEndings = <T>(inputText: string, processText: (input: string[]) => Promise<T>) => {
+const testAllLineEndings = <T>(t: Test, inputText: string, processText: (input: string[]) => Promise<T>) => {
     const crText = inputText.replaceAll('\n', '\r').split('|');
     const lfText = inputText.split('|');
     const crlfText = inputText.replaceAll('\n', '\r\n').split('|');
-    test('cr', async() => {
+    void t.test('cr', async t => {
         const result = await processText(crText);
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('lf', async() => {
+    void t.test('lf', async t => {
         const result = await processText(lfText);
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('crlf', async() => {
+    void t.test('crlf', async t => {
         const result = await processText(crlfText);
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('all line endings equal', async() => {
+    void t.test('all line endings equal', async t => {
         const lfResult = await processText(crText);
         const crResult = await processText(lfText);
         const crlfResult = await processText(crlfText);
-        expect(lfResult).toEqual(crResult);
-        expect(lfResult).toEqual(crlfResult);
-        expect(crResult).toEqual(crlfResult);
+        t.match(lfResult, crResult);
+        t.match(lfResult, crlfResult);
+        t.match(crResult, crlfResult);
+        t.end();
     });
 };
 
-const testParser = <T>(processText: (input: string[]) => Promise<T>) => {
-    describe('basic', () => {
-        testAllLineEndings('data: abc\ndata: def\n\ndata:foo\n\n', processText);
+const testParser = <T>(t: Test, processText: (input: string[]) => Promise<T>) => {
+    void t.test('basic', t => {
+        testAllLineEndings(t, 'data: abc\ndata: def\n\ndata:foo\n\n', processText);
+        t.end();
     });
 
-    describe('chunked', () => {
-        testAllLineEndings('data: abc\ndata: def|\n\ndata:foo\n\n', processText);
+    void t.test('chunked', t => {
+        testAllLineEndings(t, 'data: abc\ndata: def|\n\ndata:foo\n\n', processText);
+        t.end();
     });
 
-    describe('very chunked', () => {
-        testAllLineEndings('da|ta:| ab|c\ndata: |def|\n|\n|data:foo\n\n', processText);
+    void t.test('very chunked', t => {
+        testAllLineEndings(t, 'da|ta:| ab|c\ndata: |def|\n|\n|data:foo\n\n', processText);
+        t.end();
     });
 
-    test('chunk split at crlf', async() => {
+    void t.test('chunk split at crlf', async t => {
         const result = await processText('data: abc\r|\ndata: def\r\n\r|\ndata:foo\r\n\r\n'.split('|'));
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('cr followed by crlf', async() => {
+    void t.test('cr followed by crlf', async t => {
         const result = await processText('data: abc\r\r\ndata: def\r\r'.split('|'));
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('chunk split at cr followed by crlf 1', async() => {
+    void t.test('chunk split at cr followed by crlf 1', async t => {
         const result = await processText('data: abc\r\r|\ndata: def\r\r'.split('|'));
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    test('chunk split at cr followed by crlf 2', async() => {
+    void t.test('chunk split at cr followed by crlf 2', async t => {
         const result = await processText('data: abc\r|\r\ndata: def\r\r'.split('|'));
-        expect(result).toMatchSnapshot();
+        t.matchSnapshot(result);
+        t.end();
     });
 
-    describe('triple newline', () => {
-        testAllLineEndings('data: abc\n\n\ndata: def\n\n', processText);
+    void t.test('triple newline', t => {
+        testAllLineEndings(t, 'data: abc\n\n\ndata: def\n\n', processText);
+        t.end();
     });
 
-    describe('chunk split at end', () => {
-        testAllLineEndings('data: abc\ndata: def|\n\ndata:foo\n|\n|', processText);
+    void t.test('chunk split at end', t => {
+        testAllLineEndings(t, 'data: abc\ndata: def|\n\ndata:foo\n|\n|', processText);
+        t.end();
     });
 
-    describe('chunk split at space', () => {
-        testAllLineEndings('data: |abc\ndata:| def|\n\ndata:|foo\n\n', processText);
+    void t.test('chunk split at space', t => {
+        testAllLineEndings(t, 'data: |abc\ndata:| def|\n\ndata:|foo\n\n', processText);
+        t.end();
     });
 
-    describe('only one leading space stripped', () => {
-        testAllLineEndings('data:  abc\n\n', processText);
+    void t.test('only one leading space stripped', t => {
+        testAllLineEndings(t, 'data:  abc\n\n', processText);
+        t.end();
     });
 
-    describe('invalid stream', () => {
-        testAllLineEndings('this will never match', processText);
+    void t.test('invalid stream', t => {
+        testAllLineEndings(t, 'this will never match', processText);
+        t.end();
     });
 
-    describe('only one trailing newline stripped', () => {
-        testAllLineEndings('data:  abc\ndata:\ndata:\n\n', processText);
+    void t.test('only one trailing newline stripped', t => {
+        testAllLineEndings(t, 'data:  abc\ndata:\ndata:\n\n', processText);
+        t.end();
     });
 
-    describe('field with no colon', () => {
-        testAllLineEndings('data: abc\ndata\ndata\ndata:foo\ndata\n\n', processText);
+    void t.test('field with no colon', t => {
+        testAllLineEndings(t, 'data: abc\ndata\ndata\ndata:foo\ndata\n\n', processText);
+        t.end();
     });
 
-    describe('event types', () => {
-        testAllLineEndings('data: foo\nevent: bar\nevent: baz\ndata: quux\n\ndata: noeventtype\n\n', processText);
+    void t.test('event types', t => {
+        testAllLineEndings(t, 'data: foo\nevent: bar\nevent: baz\ndata: quux\n\ndata: noeventtype\n\n', processText);
+        t.end();
     });
 
-    describe('event IDs', () => {
+    void t.test('event IDs', t => {
         // eslint-disable-next-line @stylistic/max-len
-        testAllLineEndings('data: foo\nid: bar\nid: baz\ndata: quux\n\ndata: sameid\n\nid: newid\n\ndata: replacedid\n\n', processText);
+        testAllLineEndings(t, 'data: foo\nid: bar\nid: baz\ndata: quux\n\ndata: sameid\n\nid: newid\n\ndata: replacedid\n\n', processText);
+        t.end();
     });
 
-    describe('event ID with null byte', () => {
-        testAllLineEndings('data: foo\nid: bar\nid: inval\0id\n\ndata:again\n\nid: baz\ndata: quux\n\n', processText);
+    void t.test('event ID with null byte', t => {
+        // eslint-disable-next-line @stylistic/max-len
+        testAllLineEndings(t, 'data: foo\nid: bar\nid: inval\0id\n\ndata:again\n\nid: baz\ndata: quux\n\n', processText);
+        t.end();
     });
 
-    describe('comment', () => {
-        testAllLineEndings('data: abc\ndata: def\n:this is a comment!\n\ndata:foo\n\n', processText);
+    void t.test('comment', t => {
+        testAllLineEndings(t, 'data: abc\ndata: def\n:this is a comment!\n\ndata:foo\n\n', processText);
+        t.end();
     });
 
-    describe('empty event type is treated as \'message\'', () => {
-        testAllLineEndings('data: foo\nevent: some_custom_event\nevent:\n\n', processText);
+    void t.test('empty event type is treated as \'message\'', t => {
+        testAllLineEndings(t, 'data: foo\nevent: some_custom_event\nevent:\n\n', processText);
+        t.end();
     });
 };
 

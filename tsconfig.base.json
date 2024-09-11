@@ -11,6 +11,7 @@
         "target": "ES2022",
         "noErrorTruncation": true,
         "outDir": "dist",
-        "lib": ["ESNext", "dom"]
+        "lib": ["ESNext", "dom"],
+        "skipLibCheck": true
     }
 }
